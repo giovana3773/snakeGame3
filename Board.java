@@ -10,6 +10,7 @@ public class Board {
                 boolean shade = (x + y) % 2 ==0;
 
                 g2.setColor(shade ? new Color(1, 145,1 30))
+                g2.fillRect(x * tile, y * tile, tile, tile);
             }
         }
     }

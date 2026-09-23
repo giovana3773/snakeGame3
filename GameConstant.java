@@ -1,15 +1,15 @@
-import javax.swing.*;
+public final class GameConstants {
 
-public class Main {
+    private GameConstants() {
 
-    public static void main(String[] args) {
+        public static final String GAME_TITLE = "Snake Game";
 
-        SwingUtilities.invokeLater(() -> {
-        JFrame frame = new JFrame("Snake Game");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(480,480);
-        frame.setVisible(true);
-        });
+        public static final int TILE = 24; //formato de telha
 
+        public static final int COLS = 20; //colunas
+        public static final int ROWS = 20; //linhas
+
+        public static final int WIDTH = TILE * COLS;
+        public static final int HEIGHT = TILE * ROWS;
     }
 }
